@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Banho & Tosa</title>
+    </head>
+    <body>
+        <header>
+            <main>
+                <div class="image-container">
+                    <img id="logo" src="Logo.png" alt="Logo da Sankofa Petshop">
+                </div>
+            </main>
+            <nav>
+                <ul>
+                    <li><a href="index.html"> Home Page </a></li>
+                    <li><a href="produtos.html"> Produtos </a></li>
+                    <li><a href="banho-tosa.html"> Banho & Tosa </a></li>
+                    <li><a href="minha-conta.html"> Minha conta </a></li>
+                    <li><a href="meu-carrinho.html"> Meu carrinho </a></li>
+                </ul>
+            </nav>
+        </header>
+        <br> <br>
+        <form action="https://formsubmit.co/isabellemarie82@gmail.com" method="POST">
+            <fieldset>
+                <legend> Banho </legend>
+
+                    <br> <label> Dia e horário </label> &nbsp;&nbsp;
+                    <input type="datetime-local" name="banhoDiaHora" required/> <br> <br> <br>
+
+                    <label> Porte do animal </label>  <br> <br>
+                    <input type="radio" name="opcaoBanho" value="pequeno"/>
+                        <label> Pequeno </label>
+                    <input type="radio" name="opcaoBanho" value="medio"/>
+                        <label> Médio </label>
+                    <input type="radio" name="opcaoBanho" value="grande"/>
+                        <label> Grande </label> <br> <br> <br>
+
+                    <label> Busca à domicílio? </label> <br> <br>
+                    <input type="radio" name="banhoDimicilio" value="sim"/>
+                        <label> Sim </label>
+                    <input type="radio" name="banhoDimicilio" value="nao"/>
+                        <label> Não </label> <br> <br> <br>
+
+                    <button id="botaoDiferente" type="reset">Deletar</button> &nbsp; 
+                    <button type="button" id="add-banho" onclick="addToCart('7', 'Banho', 100.00)">Adicionar ao carrinho</button> <br> <br>
+            </fieldset>
+            <br> <br>
+            <fieldset>
+                <legend> Tosa </legend>
+
+                <br> <label> Dia e horário </label> &nbsp;&nbsp;
+                <input type="datetime-local" name="tosaDiaHora" required/> <br> <br> <br>
+
+                <label> Porte do animal </label> <br> <br>
+                <input type="radio" name="tosaPortePequeno" value="pequeno"/>
+                    <label> Pequeno </label>
+                <input type="radio" name="tosaPorteMedio" value="medio"/>
+                    <label> Médio </label>
+                <input type="radio" name="tosaPorteGrande" value="grande"/>
+                    <label> Grande </label> <br> <br> <br>
+
+                <label> Busca à domicílio? </label> <br> <br>
+                <input type="radio" name="tosaDomicilioSim" value="sim"/>
+                    <label> Sim </label>
+                <input type="radio" name="tosaDomicilioNao" value="nao"/>
+                    <label> Não </label> <br> <br> <br>
+
+                <button id="botaoDiferente" type="reset">Deletar</button> &nbsp; 
+                <button type="button" id="add-tosa" onclick="addToCart('8', 'Tosa', 70.00)">Adicionar ao carrinho</button> <br> <br>
+            </fieldset>
+        </form> <br> <br>
+        <script src="scripts.js"></script>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 Sankofa Petshop. Todos os direitos reservados.</p>
+                <p><a href="https://www.sankofa.com" target="_blank">Visite nosso site</a></p>
+                <p><a href="#top">Voltar ao topo</a></p>
+            </div>
+        </footer>
+    </body>
+</html>

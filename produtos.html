@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Produtos</title>
+    </head>
+    <body>
+        <header>
+            <main>
+                <div class="image-container">
+                    <img id="logo" src="Logo.png" alt="Logo da Sankofa Petshop">
+                </div>
+            </main>
+            <nav>
+                <ul>
+                    <li><a href="index.html"> Home Page </a></li>
+                    <li><a href="produtos.html"> Produtos </a></li>
+                    <li><a href="banho-tosa.html"> Banho & Tosa </a></li>
+                    <li><a href="minha-conta.html"> Minha conta </a></li>
+                    <li><a href="meu-carrinho.html"> Meu carrinho </a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="racao-seca">
+                <h2>Ração Seca</h2>
+                <div class="product" data-id="1">
+                    <h3>Ração Seca Pedigree Nutrição Essencial</h3>
+                    <img src="RacaoSeca1.png" alt="Ração Seca 1">
+                    <p>R$ 129,87</p>
+                    <button onclick="addToCart('1', 'Ração Pedigree Nutrição Essencial', 129.87)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product" data-id="2">
+                    <h3>Ração Seca GranPlus Choice Frango</h3>
+                    <img src="RacaoSeca2.png" alt="Ração Seca 2">
+                    <p>R$ 109,90</p>
+                    <button onclick="addToCart('2', 'Ração Seca GranPlus Choice Frango', 109.90)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product" data-id="3">
+                    <h3>Ração Seca Tutano para Cães Sensíveis</h3>
+                    <img src="RacaoSeca3.png" alt="Ração Seca 3">
+                    <p>R$ 189,99</p>
+                    <button onclick="addToCart('2', 'Ração Seca Tutano para Cães Sensíveis', 189.99)">Adicionar ao Carrinho</button>
+                </div>
+            </section>
+            <section id="racao-umida">
+                <h2>Ração Úmida</h2>
+                <div class="product" data-id="4">
+                    <h3>Ração Úmida Pedigree Sachê Carne</h3>
+                    <img src="RacaoUmida1.png" alt="Ração Úmida 1">
+                    <p>R$ 2,79</p>
+                    <button onclick="addToCart('4', 'Ração Úmida Pedigree Sachê Carne', 2.79)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product" data-id="5">
+                    <h3>Ração Úmida GranPlus Gourmet Ovelha</h3>
+                    <img src="RacaoUmida2.png" alt="Ração Úmida 2">
+                    <p>R$ 2,47</p>
+                    <button onclick="addToCart('5', 'Ração Úmida Saborosa', 2.47)">Adicionar ao Carrinho</button>
+                </div>
+                <div class="product" data-id="6">
+                    <h3>Ração Úmida Farmina Matisse Sardinha</h3>
+                    <img src="RacaoUmida3.png" alt="Ração Úmida 3">
+                    <p>R$ 2,18</p>
+                    <button onclick="addToCart('6', 'Ração Úmida Saborosa', 2.18)">Adicionar ao Carrinho</button>
+                </div>
+            </section>
+        </main>
+        <script src="scripts.js"></script>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 Sankofa Petshop. Todos os direitos reservados.</p>
+                <p><a href="https://www.sankofa.com" target="_blank">Visite nosso site</a></p>
+                <p><a href="#top">Voltar ao topo</a></p>
+            </div>
+        </footer>
+    </body>
+</html>

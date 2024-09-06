@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Minha conta</title>
+    </head>
+    <body>
+        <header>
+            <main>
+                <div class="image-container">
+                    <img id="logo" src="Logo.png" alt="Logo da Sankofa Petshop">
+                </div>
+            </main>
+            <nav>
+                <ul>
+                    <li><a href="index.html"> Home Page </a></li>
+                    <li><a href="produtos.html"> Produtos </a></li>
+                    <li><a href="banho-tosa.html"> Banho & Tosa </a></li>
+                    <li><a href="minha-conta.html"> Minha conta </a></li>
+                    <li><a href="meu-carrinho.html"> Meu carrinho </a></li>
+                </ul>
+            </nav>
+        </header>
+        <form action="https://formsubmit.co/isabellemarie82@gmail.com" method="POST">
+            <br> <br> <fieldset>
+                <legend> Minha conta </legend> <br>
+
+                    <label> E-mail </label> <br> 
+                    <input type="email" name="email" pattern="{8,}" autofocus required/> <br> <br> <br>
+
+                    <label> Senha </label> <br>
+                    <input type="password" name="senha" minlength="10" required/> <br> 
+
+                    <br> <br> <button id="botaoDiferente" type="reset"> Deletar </button> &nbsp;&nbsp;
+                    <button id="botaoDiferente" type="submit"> <a href="cadastro.html"> Cadastrar </a> </button> &nbsp;&nbsp;
+                    <button id="botaoDiferente" type="submit"> <a href="cadastro.html"> Login </a> </button> <br> <br>
+            </fieldset> <br> <br>
+        </form>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 Sankofa Petshop. Todos os direitos reservados.</p>
+                <p><a href="https://www.sankofa.com" target="_blank">Visite nosso site</a></p>
+                <p><a href="#top">Voltar ao topo</a></p>
+            </div>
+        </footer>
+    </body>
+</html>

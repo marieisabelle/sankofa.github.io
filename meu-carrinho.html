@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Meu carrinho</title>
+    </head>
+    <body>
+        <header>
+            <main>
+                <div class="image-container">
+                    <img id="logo" src="Logo.png" alt="Logo da Sankofa Petshop">
+                </div>
+            </main>
+            <nav>
+                <ul>
+                    <li><a href="index.html"> Home Page </a></li>
+                    <li><a href="produtos.html"> Produtos </a></li>
+                    <li><a href="banho-tosa.html"> Banho & Tosa </a></li>
+                    <li><a href="minha-conta.html"> Minha conta </a></li>
+                    <li><a href="meu-carrinho.html"> Meu carrinho </a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Itens no Carrinho</h2>
+            <div id="cart-items"></div>
+            <div id="cart-total"></div>
+            <button id="botaoDiferente" onclick="clearCart()">Esvaziar Carrinho</button>
+            <button onclick="buy()">Finalizar compra</button>
+        </main>
+        <script src="scripts.js"></script>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 Sankofa Petshop. Todos os direitos reservados.</p>
+                <p><a href="https://www.sankofa.com" target="_blank">Visite nosso site</a></p>
+                <p><a href="#top">Voltar ao topo</a></p>
+            </div>
+        </footer>
+    </body>
+</html>

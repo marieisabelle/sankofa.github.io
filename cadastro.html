@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link href="styles.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Cadastro</title>
+    </head>
+    <body>
+        <header>
+            <main>
+                <div class="image-container">
+                    <img id="logo" src="Logo.png" alt="Logo da Sankofa Petshop">
+                </div>
+            </main>
+            <nav>
+                <ul>
+                    <li><a href="index.html"> Home Page </a></li>
+                    <li><a href="produtos.html"> Produtos </a></li>
+                    <li><a href="banho-tosa.html"> Banho & Tosa </a></li>
+                    <li><a href="minha-conta.html"> Minha conta </a></li>
+                    <li><a href="meu-carrinho.html"> Meu carrinho </a></li>
+                </ul>
+            </nav>
+        </header>
+        <form action="https://formsubmit.co/isabellemarie82@gmail.com" method="POST">
+            <br> <br>
+            <fieldset>
+                <legend> Suas informações </legend>
+                    
+                    <br> <label> Nome completo</label>
+                    <input type="text" name="nome" autofocus required> &nbsp;&nbsp;
+
+                    <label> CPF </label> 
+                    <input type="text" name="cpf" placeholder="XXX.XXX.XXX-XX" required/> &nbsp;&nbsp;
+
+                    <label> Data de nascimento </label> 
+                    <input type="date" name="nascimento" required/>  &nbsp;&nbsp;
+
+                    <label> Telefone </label> 
+                    <input type="tel" name="fone" placeholder="(DD) XXXXX-XXXX" pattern="[0-9]{10}" required/> <br> <br> <br>
+
+                    <label> Logradouro </label> 
+                    <input type="text" name="logradouro" required/>  &nbsp;&nbsp;
+
+                    <label> Número do logradouro</label> 
+                    <input type="number" name="numeroLogradouro" pattern="[0-9]{1,}" required/>  &nbsp;&nbsp;
+
+                    <label> Complemento do logradouro</label> 
+                    <input type="text" name="complementoLogradouro"/> <br> <br>
+            </fieldset>
+            <br> <br>
+            <fieldset>
+                <legend> Informações do seu pet </legend>
+
+                    <br> <label> Qual pet você tem? </label> <br> <br>
+                    <input type="radio" name="opcao" value="Cachorro"/>
+                        <label> Cachorro </label>
+                    <input type="radio" name="opcao" value="Gato"/>
+                        <label> Gato </label> <br> <br> <br>
+
+                    <label>Nome do seu pet</label>  
+                    <input type="text" name="nomePet" pattern="[A-Za-z]{6}" required/> &nbsp;&nbsp;
+
+                    <label> Raça </label> 
+                    <input type="text" name="racaPet" pattern="[A-Za-z]{6}" required/> <br> <br> <br>
+
+                    <label> Temperamento </label> 
+                    <select name="temperamentoPet">
+                        <option value="colerico"> Colérico </option>
+                        <option value="sanguineo"> Sanguíneo </option>
+                        <option value="melancolico"> Melacólico </option>
+                        <option value="fleumatico"> Fleumático </option>
+                    </select> &nbsp;&nbsp;
+
+                    <label> Data de nascimento do seu pet </label>
+                    <input type="date" name="nascimentoPet" required/> <br> <br>
+            </fieldset>
+
+            <br> <br> <button type="submit"> Enviar </button> &nbsp;&nbsp;
+            <button type="reset"> Deletar </button> <br> <br> <br>
+        </form>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2024 Sankofa Petshop. Todos os direitos reservados.</p>
+                <p><a href="https://www.sankofa.com" target="_blank">Visite nosso site</a></p>
+                <p><a href="#top">Voltar ao topo</a></p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ECD1D1;
+    color: #CD545B;
+}
+
+header {
+    display: flex; /* Ativa o layout Flexbox */
+    background-color: #FFFFFF;
+    color: #3B3B3B;
+    padding: 10px 0;
+    text-align: center;
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Espaça o logo e o texto igualmente */
+    padding: 5px 5px; /* Adiciona algum padding ao redor do cabeçalho */
+    border-bottom: 2px inset #CD545B; /* Adiciona uma borda inferior de 2 pixels na cor #CD545B */
+}
+
+footer {
+    background-color: #FFFFFF;
+    color: #3B3B3B;
+    padding: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    color: #CD545B;
+    text-decoration: none;
+}
+
+.image-container img {
+    max-width: 100%; /* Garante que as imagens não excedam a largura do contêiner */
+    height: auto; /* Mantém a proporção das imagens */ 
+    border-radius: 8px; /* Arredonda as bordas das imagens */
+    background-size: cover; /* Faz com que a imagem cubra toda a área do contêiner */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita a repetição da imagem */
+    width: 100vw; /* Define a largura como 100% da largura da janela */
+}
+
+#logo {
+    width: 120px; /* Define a largura da imagem */
+    height: 120px;
+    border-radius: 15px; /* Arredonda as bordas da imagem */
+}
+
+button {
+    margin: 2px; /* Margem de 2 pixels ao redor do botão */
+    background-color: #CD545B; /* Cor de fundo do botão */
+    color: #FFFFFF; /* Cor do texto no botão */
+    border: 2px solid #CD545B; /* Borda de 2 pixels na cor especificada */
+    border-radius: 15px; /* Bordas arredondadas com raio de 20 pixels */
+    padding: 10px 20px; /* Espaçamento interno do botão (ajuste conforme necessário) */
+    font-size: 16px; /* Tamanho da fonte do texto no botão (ajuste conforme necessário) */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
+    transition: background-color 0.3s, border-color 0.3s; /* Transição suave para efeitos de hover */
+}
+
+#botaoDiferente{
+    color: #CD545B;
+    background-color: #FFFFFF;
+    border: 2px solid #CD545B;
+}
+
+.product {
+    display: flex;
+    border: 2px solid #CD545B;
+    background-color: #FFFFFF;
+    padding: 10px;
+    width: 250px;
+    border-radius: 8px;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo dentro do produto */
+    flex: 1 1 calc(50% - 20px); /* Permite que cada item ocupe metade da largura menos o espaço do gap */
+    box-sizing: border-box; /* Inclui padding e border na largura total do item */
+    justify-content: space-between; 
+}
+
+.product img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+h2{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
