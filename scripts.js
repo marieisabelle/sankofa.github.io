@@ -51,3 +51,25 @@ function buy() {
 
 // Exibe o carrinho ao carregar a página
 document.addEventListener('DOMContentLoaded', displayCart);
+
+const slide = document.querySelector('.carousel-slide');
+const images = document.querySelectorAll('.carousel-slide img');
+
+let index = 0;
+const totalImages = images.length;
+const interval = 3000; // Tempo em milissegundos (3 segundos)
+
+function showNextImage() {
+    index++;
+    if (index >= totalImages) {
+        index = 0;
+    }
+    const offset = -index * 100;
+    slide.style.transform = `translateX(${offset}%)`;
+}
+
+// Muda a imagem a cada intervalo
+setInterval(showNextImage, interval);
+
+// Inicializa o carrossel com a primeira imagem
+showNextImage();
